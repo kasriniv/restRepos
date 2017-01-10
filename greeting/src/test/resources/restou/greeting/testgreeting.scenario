@@ -15,8 +15,24 @@
       <name>p</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>28</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>salutation</fieldName>
+          <expected>hi there</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Greeting</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
+  <lastRunResult>2017-01-10 20:29:48.153 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>restou.greeting</packageName>
