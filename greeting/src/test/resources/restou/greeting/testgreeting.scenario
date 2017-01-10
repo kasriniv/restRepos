@@ -5,7 +5,13 @@
   <fixtures>
     <fact-data>
       <type>Person</type>
-      <fieldData/>
+      <fieldData>
+        <field-data>
+          <name>name</name>
+          <value>kavitha</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
       <name>p</name>
       <isModify>false</isModify>
     </fact-data>
