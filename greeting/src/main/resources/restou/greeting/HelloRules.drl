@@ -9,7 +9,7 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello " + person.getName() + "! Hellofrom bpm64 trial1";
+        String salutation = "Hello " + person.getName() + "! Hellofrom bpm64 trial2";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
