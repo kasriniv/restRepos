@@ -9,13 +9,13 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello " + person.getName() + "! Hellofrom bpm64 from biz central to ose trial55";
+        String salutation = "Hello " + person.getName() + "! BPM64 Hello from biz central to OSE to 3scale";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
     when
         person : Person( name != "rettori")
     then
-        String salutation = "hi there, testing githook, get out of my way " + person.getName();
+        String salutation = "hi there, testing githook, BPM64 Hello from biz central to OSE to 3scale " + person.getName();
         insert(new Greeting(salutation));
 end
