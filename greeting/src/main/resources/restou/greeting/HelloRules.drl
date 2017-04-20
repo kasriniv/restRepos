@@ -9,7 +9,7 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello meetup attendees  " + person.getName() + "! BPM64 Hello from biz central to my local openshift env";
+        String salutation = "Hello meetup attendees 3  " + person.getName() + "! BPM64 Hello from biz central to my local openshift env";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
