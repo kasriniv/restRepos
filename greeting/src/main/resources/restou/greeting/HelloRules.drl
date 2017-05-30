@@ -9,13 +9,13 @@ rule "greet master"
     when
         person : Person( name == "rettori")
     then
-        String salutation = "Hello UHG2 workshop  " + person.getName() + "! BPM64 Hello from biz central to my local openshift env";
+        String salutation = "Hello UHG2 workshop at Horsham Attendees  " + person.getName() + "! BPM64 Hello from biz central to my local openshift env";
         insert(new Greeting(salutation));
 end
 rule "greet strangers"
     when
         person : Person( name != "rettori")
     then
-        String salutation = "hello UHG2 workshop  THANK YOU FOR BEING HERE , BPM64 Hello from biz central to OSE to 3scale " + person.getName();
+        String salutation = "hello UHG2 workshopat Horsham Attendees .  THANK YOU FOR BEING HERE , BPM64 Hello from biz central to OSE to 3scale " + person.getName();
         insert(new Greeting(salutation));
 end
